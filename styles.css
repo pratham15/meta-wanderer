@@ -48,6 +48,9 @@ hr {
   font-family: "Rosario", sans-serif;
   text-shadow: 13px 13px 25px #000000;
   margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 nav {
@@ -148,14 +151,19 @@ nav {
 .aim ul {
   margin: 0px 128px;
   padding-bottom: 128px;
-  list-style: none;
 }
 .aim ul li {
   color: var(--primary-color);
   font-family: "Roboto", sans-serif;
-  margin-top: 32px;
   font-weight: 400;
   letter-spacing: 1px;
+  position: relative;
+  list-style: none;
+  background-image: url(/assets/bullet.png);
+  background-repeat: no-repeat;
+  background-size: 48px;
+  padding-left: 64px;
+  min-height: 80px;
 }
 
 /* ROADMAP */
@@ -237,4 +245,65 @@ nav {
 .right .content h1,
 .right .content p {
   text-align: left;
+}
+
+/* FAQs */
+
+.faqs {
+  align-items: baseline;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 32px;
+}
+.item span,
+.item .ques {
+  color: white;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+.item .ques {
+  padding-left: 100px;
+}
+.item span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.item .resp {
+  color: #3982ac;
+  font-size: 20px;
+  padding-left: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Footer */
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(79px);
+}
+footer div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div ul {
+  list-style: none;
+  padding-top: 16px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+footer div ul li a img {
+  height: 32px;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 64px 0;
 }
