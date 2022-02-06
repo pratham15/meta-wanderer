@@ -141,15 +141,14 @@ nav {
 
 .aim {
   background-image: url("./assets/aim-bg.png");
-  background-size: auto;
   background-repeat: no-repeat;
-  background-size: 500px 500px;
   background-position: center;
 }
 
 .aim ul {
   margin: 0px 128px;
   padding-bottom: 128px;
+  list-style: none;
 }
 .aim ul li {
   color: var(--primary-color);
