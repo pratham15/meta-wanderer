@@ -140,6 +140,31 @@ nav {
   letter-spacing: 0.5px;
 }
 
+.buttons {
+  width: auto !important;
+  margin: auto;
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  justify-content: center;
+}
+.buttons button {
+  font-family: "Roboto", sans-serif;
+  height: 48px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border: none;
+  width: 128px;
+}
+.discord {
+  color: white;
+  background-color: #00000033;
+}
+.opensea {
+  color: white;
+  background-color: #68b7ff33;
+}
 /* Section Aim */
 
 .aim {
@@ -306,4 +331,58 @@ footer p {
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 64px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  hr {
+    width: 80%;
+  }
+  section {
+    width: auto;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about div {
+    width: auto;
+  }
+  .about .content h1 {
+    margin-top: 32px;
+  }
+
+  .aim ul {
+    margin: 0;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .left::after,
+  .right::after {
+    left: 22px;
+    top: 48px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .container .content h1,
+  .container .content p {
+    text-align: left;
+  }
+  .container {
+    width: 100% !important;
+  }
 }
